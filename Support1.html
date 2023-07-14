@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support 1</title>
+
+    <link rel="stylesheet" href="styles/support1.css" />
+    <link rel="stylesheet" href="shared/styles/header.css" />
+    <link rel="stylesheet" href="shared/styles/footer.css" />
+  </head>
+
+  <body>
+    <!-- Header-->
+    <div class="header">
+      <div class="left-section"></div>
+
+      <div class="middle-section">
+        <button
+          class="email-button"
+          onclick="location.href= 'mailto:info@navidoc.dk'"
+        >
+          <img class="email-icon" src="shared/images/email.svg" />
+          <p>info@navidoc.dk</p>
+          <!-- <div class="tooltip">email</div> -->
+        </button>
+        <div class="vertical-line"></div>
+        <button
+          class="call-button"
+          onclick="location.href = 'tel:+45 4692 2842'
+        "
+        >
+          <img class="call-icon" src="shared/images/phone.svg" />
+          <p>+45 4692 2842</p>
+          <!-- <div class="tooltip">Call</div> -->
+        </button>
+      </div>
+
+      <div class="right-section">
+        <div class="language-button-container">
+          <button
+            class="dk-button"
+            onmouseover="showButton2()"
+            onmouseout="hideChildButton(event)"
+            onclick="swapButtons('button1')"
+          >
+            <img class="dk-icon" src="shared/images/Flag_of_Denmark.svg" />
+            <p>DANSK</p>
+          </button>
+
+          <button
+            class="uk-button"
+            onmouseover="showButton1()"
+            onmouseout="hideChildButton(event)"
+            onclick="swapButtons('button2')"
+          >
+            <img
+              class="uk-icon"
+              src="shared/images/Flag_of_the_United_Kingdom.svg"
+            />
+            <p>ENGLISH</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--Hero-Section-->
+    <div class="hero-section">
+      <div class="text-container">Support</div>
+    </div>
+
+    <!-- Content-->
+    <div class="container">
+      <div class="content">
+        <div class="buttons-grid">
+          <button
+            class="button-class"
+            onclick="
+          var url = 'support2.html';
+  window.location.href = encodeURIComponent(url);
+  "
+          >
+            <img src="images/acubiz-one-app.svg" />
+            <p>Navidoc lige ved hånden - Acubiz One app</p>
+          </button>
+          <button class="button-class">
+            <img src="images/help-with-login.svg" />
+            <p>Hjælp til login?</p>
+          </button>
+          <button class="button-class">
+            <img src="images/maintenance.png" />
+            <p>Administration, opsætning og vedligeholdelse</p>
+          </button>
+          <button class="button-class">
+            <img src="images/laptop-controlling.svg" />
+            <p>Finans kontrol, bogføring, værktøjer og controlling</p>
+          </button>
+          <button class="button-class">
+            <img src="images/invoice.png" />
+            <p>Leverandørfaktura håndtering og administration</p>
+          </button>
+          <button class="button-class">
+            <img src="images/benefits.svg" />
+            <p>WEB - Medarbejder/godkender</p>
+          </button>
+          <button class="button-class">
+            <img src="images/news.png" />
+            <p>Nyheds opdatering, tips og tricks</p>
+          </button>
+          <button class="button-class">
+            <img src="images/automation.svg" />
+            <p>Integrationer og teknisk information</p>
+          </button>
+        </div>
+
+        <div class="text-grid">
+          <p class="heading">Fremhævede artikler</p>
+          <a href="/">Navidoc One - telefon kompatibilitet</a><br />
+          <a href="/">Download Navidoc One</a><br />
+          <a href="/">Tilføje et ekstra sikkerhedslag i adgangen til Navidoc</a
+          ><br />
+          <a href="/">Navidoc One - Version 2.7</a><br />
+          <a href="/">Driftsinformation</a><br />
+          <a href="/">Sådan logger du ind i Navidoc One (almindeligt login)</a
+          ><br />
+          <a href="/"
+            >Sådan logger du ind i Navidoc One med Single Sign On (SSO)</a
+          ><br />
+          <a href="/">Hvis du har brug for et nyt kodeord - anmod om et nyt</a
+          ><br />
+          <a href="/">Nyt i version R7.2</a>
+        </div>
+
+        <div class="text-grid">
+          <p class="heading">Nylig aktivitet</p>
+          <div class="nested-text-grid">
+            <a href="\"
+              >Konteringsprincipper i Navidoc
+              <span class="med-text"
+                >Elektroniske fakturaer fra eks. rejsekonti eller
+                teleselskaber</span
+              ></a
+            >
+
+            <p class="small-text">Aritkel oporpokp lsdkdmlm 25</p>
+
+            <a href="\"
+              >Når du har afholdt udgifter samt være fortrolig med Navidoc i
+              dagligdagen
+              <span class="med-text">
+                Elektroniske fakturaer fra eks. rejsekonti eller
+                teleselskaber</span
+              ></a
+            >
+            <p class="small-text">Aritkel oporpokp lsdkdmlm 25</p>
+            <a href="\"
+              >Ændringshistorik - Nyheder i Navidoc One
+              <span class="med-text">Navidoc One - Version 2.7</span></a
+            >
+            <p class="small-text">Aritkel oporpokp lsdkdmlm 25</p>
+            <a href="\"
+              >Kontoplan og valutaer
+              <span class="med-text"
+                >Aktivere eller deaktivere automatisk klarmelding</span
+              ></a
+            >
+            <p class="small-text">Aritkel oporpokp lsdkdmlm 25</p>
+
+            <a href="\"
+              >Øvrige indstillinger
+              <span class="med-text"
+                >Manuel vedligeholdelse af kørselssatser</span
+              ></a
+            >
+            <p class="small-text">Aritkel oporpokp lsdkdmlm 25</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content-->
+    <div class="footer">
+      <div class="footer-content-grid">
+        <div>
+          <img class="navidoc-logo" src="shared\images\footer-logo.png" />
+          <p style="text-align: justify">
+            NaviDoc is a software company, which facilitates its clients’
+            accounts department with its groundbreaking cloud software, thus
+            eliminating all paperwork. This transition leads to many savings and
+            adds value to the clients’ companies. Two young IT specialists, both
+            with a solid career in the ERP, founded NaviDoc in 2011.
+          </p>
+        </div>
+        <div>
+          <h3>Navidoc solutions</h3>
+          <p>Workflow</p>
+          <p>Navidoc Expense</p>
+          <p>Navidoc Time</p>
+          <p>Partners</p>
+          <p>Contact Us</p>
+        </div>
+        <div>
+          <h3>Other Services</h3>
+          <p>Dynamic Resources</p>
+        </div>
+        <div class="navidoc-product-grid">
+          <div class="order-demo">
+            <h3>Learn more about NaviDoc's products</h3>
+            <br />
+            <button class="demo-button">Fa En Demo Har</button>
+          </div>
+
+          <div class="download-brochure">
+            <p>
+              Læs om NaviDocs løsninger ved at downloade denne brochure: (PDF, 8
+              Mb)
+            </p>
+            <button class="download-brochure-button">
+              <img src="shared/images/pdf-icon.png" /> Download Brochure
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-social-grid">
+        <div class="social">
+          <img src="shared/images/fb.png" />
+          <img src="shared/images/insta.png" />
+        </div>
+        <div class="navidoc">c 2020 NaviDoc.</div>
+      </div>
+    </div>
+
+    <script src="shared/script/header.js"></script>
+  </body>
+</html>
