@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <link rel="stylesheet" href="shared/styles/header.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+  </head>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-section"></div>
+
+      <div class="middle-section">
+        <button
+          class="email-button"
+          onclick="location.href= 'mailto:info@navidoc.dk'"
+        >
+          <img class="email-icon" src="shared/images/email.svg" />
+          <p>info@navidoc.dk</p>
+          <!-- <div class="tooltip">email</div> -->
+        </button>
+        <div class="vertical-line"></div>
+        <button
+          class="call-button"
+          onclick="location.href = 'tel:+45 4692 2842'
+        "
+        >
+          <img class="call-icon" src="shared/images/phone.svg" />
+          <p>+45 4692 2842</p>
+          <!-- <div class="tooltip">Call</div> -->
+        </button>
+      </div>
+
+      <div class="right-section">
+        <div class="language-button-container">
+          <button
+            class="dk-button"
+            onmouseover="showButton2()"
+            onmouseout="hideChildButton(event)"
+            onclick="swapButtons('button1')"
+          >
+            <img class="dk-icon" src="shared/images/Flag_of_Denmark.svg" />
+            <p>DANSK</p>
+          </button>
+
+          <button
+            class="uk-button"
+            onmouseover="showButton1()"
+            onmouseout="hideChildButton(event)"
+            onclick="swapButtons('button2')"
+          >
+            <img
+              class="uk-icon"
+              src="shared/images/Flag_of_the_United_Kingdom.svg"
+            />
+            <p>ENGLISH</p>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="shared/script/header.js"></script>
+  </body>
+</html>
