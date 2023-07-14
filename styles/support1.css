@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-section {
+  margin-top: 20px;
+  block-size: 40vh;
+  background-image: url("../images/hero-section-support.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.hero-section::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(
+    128,
+    128,
+    128,
+    0.5
+  ); /* Grey semi-transparent overlay */
+}
+
+.text-container {
+  padding: 0;
+  position: absolute; /* Set the text container to absolute position */
+  bottom: 45%; /* Set the text container to the bottom of the image */
+  left: 25%;
+  right: 25%;
+  text-align: center;
+  color: #ffffff; /* Set text color */
+  font-size: 50px;
+}
+
+.container {
+  inline-size: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  inline-size: 70%;
+  padding-block-start: 30px;
+  padding-block-end: 30px;
+}
+
+.buttons-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center; /* center the items horizontally */
+  align-items: center; /* center the items vertically */
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.buttons-grid button {
+  width: 100%; /* set button width to 100% */
+  height: 100%;
+}
+
+.button-class {
+  background-color: white;
+  align-items: center;
+  color: aliceblue;
+  border-color: rgb(178, 177, 177);
+  border-width: 1px;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.button-class img {
+  padding-top: 30px;
+  width: 70px;
+  filter: brightness(0) saturate(0%) invert(57%) sepia(96%) saturate(250%)
+    hue-rotate(50deg) brightness(91%) contrast(91%);
+}
+
+.button-class p {
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2vw; /* use a responsive font size */
+  font-weight: 350;
+  text-align: center;
+  padding: 10px 10px 10px 10px; /* add padding to the top, right, bottom, and left */
+}
+
+.button-class:hover {
+  background-color: #9ac45bff; /* new background color on hover */
+  color: white; /* new text color on hover */
+  cursor: pointer;
+}
+
+.button-class:hover img {
+  filter: none;
+  filter: invert(100%) brightness(10000%); /* apply filter to image on hover */
+}
+
+.button-class:hover p {
+  color: white; /* change color of text inside button on hover */
+}
+
+.text-grid {
+  margin-top: 50px;
+  padding: 0;
+}
+
+.text-grid a,
+.text-grid p,
+.heading {
+  text-align: left;
+}
+
+.text-grid h1,
+.heading {
+  font-size: 50px;
+  color: #9ac45bff;
+}
+.text-grid a {
+  display: block; /* Display as block element */
+  text-decoration: none; /* Remove underline */
+  margin-bottom: auto; /* Add some bottom margin */
+  color: black;
+  font-size: 20px;
+}
+.text-grid a:hover {
+  color: #9ac45bff;
+}
+
+.nested-text-grid {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  align-items: start;
+  grid-gap: 10px;
+}
+
+/*small-text represents the text in p tag of .nested-test-grid*/
+.small-text {
+  color: gray;
+  font-size: 15px;
+}
+
+/*med-text represents text in span tag nested in a tag of class nested-text-grid*/
+.med-text {
+  font-size: 18px;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    inline-size: 75%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .content {
+    inline-size: 80%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .middle-section {
+    border: none;
+  }
+  .hero-section {
+    block-size: 30vh;
+  }
+
+  .content {
+    inline-size: 90%;
+  }
+  .button-class img {
+    width: 77px;
+  }
+  .button-class p {
+    font-size: 20px;
+  }
+
+  .buttons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .buttons-grid button {
+    aspect-ratio: 2/1;
+  }
+
+  .nested-text-grid {
+    grid-template-columns: 65% 35%;
+  }
+
+  .text-container {
+    font-size: 50px;
+    bottom: 25%; /* Set the text container to the bottom of the image */
+    left: 25%;
+    right: 25%;
+    top: 25%; /* Set the text container to the left of the image */
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .middle-section {
+    border: none;
+  }
+
+  .button2 {
+    display: none;
+  }
+  .hero-section {
+    block-size: 30vh;
+  }
+
+  .content {
+    inline-size: 90%;
+  }
+
+  .button-class img {
+    width: 77px;
+  }
+  .button-class p {
+    font-size: 20px;
+  }
+
+  .buttons-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .buttons-grid button {
+    aspect-ratio: 2/1;
+  }
+
+  .nested-text-grid {
+    grid-template-columns: 1fr;
+    border-width: 1px;
+  }
+
+  .small-text {
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .med-text {
+    font-size: 18px;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  .text-container {
+    font-size: 50px;
+    bottom: 25%; /* Set the text container to the bottom of the image */
+    left: 25%;
+    right: 25%;
+    top: 25%; /* Set the text container to the left of the image */
+    text-align: center;
+  }
+}
